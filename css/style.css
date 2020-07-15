@@ -1,0 +1,71 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+
+
+/* Custom Properties */
+:root {
+    /* colors */
+    --clr-white: #ffffff;
+    --vlr-black: #111111;
+    --clr-light-blue:#ebfaff;
+    --clr-light-purple:#f0ebff;
+    --clr-blue:#49c9e9;
+    --clr-purple:#6949e9;
+
+    /* Heading colors */
+    --clr-drk-blue: #102a42;
+
+    /* font */
+    --ff-primary:"Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+
+    /* animation */
+    --transition: all 0.3s linear;
+
+    /* shadows */
+    --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-drk-blue);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,h2,h3,h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+
+
+
