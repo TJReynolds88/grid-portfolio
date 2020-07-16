@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,10 +17,14 @@
     <nav class="nav" id="nav">
       <div class="nav-center">
         <div class="nav-header">
-          <h2>TJ Reynolds</h2>
+          <h2 class="name-header"><span>TJ</span>Reynolds</h2>
           <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
           </button>
+          <div class="toggle">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle"></label>
+          </div>
         </div>
         <!-- nav links-->
         <ul class="nav-links">
@@ -97,10 +100,6 @@
     <header class="hero">
       <div class="section-center hero-center">
         <article class="hero-info">
-          <div class="toggle">
-            <input type="checkbox" id="toggle" />
-            <label for="toggle"></label>
-          </div>
           <div class="underline"></div>
           <h1>i'm TJ</h1>
           <h4>Web Developer</h4>
@@ -151,7 +150,7 @@
                     <div class="underline"></div>
                 </div>
                 <!-- About Section-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur libero quos sunt enim odio est nostrum unde recusandae fugit optio eaque iste deleniti quo repellat, nesciunt quidem corporis? Ullam, illo!</p>
+                <p>I am a web developer who loves building things that live on the internet. I enjoy examining the building blocks of the world, and learning how they work together so then I can build something even better. I'm very passionate and dedicated to my work and I'm always open to learning new technologies and frameworks. When I am not working I enjoy reading up on the latest tech, gaming (XB1) and cooking.</p>
                 <a href="about.html" class="btn about-btn">About Me</a>
             </article>
         </div>
@@ -181,7 +180,7 @@
             <!-- App Design-->
             <article class="service">
                 <i class="fab fa-android service-icon"></i>
-                <h4>web design</h4>
+                <h4>app design</h4>
                 <div class="underline"></div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, necessitatibus odit porro, doloribus expedita cum dolorem laborum fugiat labore eaque suscipit tempore accusamus fuga unde. Voluptate quod sunt aspernatur? Deserunt!</p>
             </article>
@@ -302,8 +301,8 @@
             <div class="skill">
               <p>node</p>
               <div class="skill-container">
-                <div class="skill-value"></div>
-                <p class="skill-text">
+                <div class="skill-value value-50"></div>
+                <p class="skill-text skill-text-50">
                   50%
                 </p>
               </div>
@@ -311,9 +310,9 @@
             <div class="skill">
               <p>PHP</p>
               <div class="skill-container">
-                <div class="skill-value value-70"></div>
-                <p class="skill-text skill-text-70">
-                  70%
+                <div class="skill-value value-60"></div>
+                <p class="skill-text skill-text-60">
+                  60%
                 </p>
               </div>
             </div>
@@ -321,5 +320,41 @@
         </div>
       </section>
       <!-- end of skills -->
+
+      <!-- section to come-->
+
+      <!-- start footer-->
+      <footer class="footer">
+        <ul class="social-icons">
+          <li>
+            <a href="https://twitter.com/TJ309" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tj-reynolds/"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/tj-reynolds" class="social-icon">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/tj.reynolds/?hl=en"
+              class="social-icon"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; <span id="date"></span> John Doe. All rights reserved.</p>
+      </footer>
+      <script src="./js/app.js"></script>
   </body>
 </html>
