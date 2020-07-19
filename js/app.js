@@ -20,3 +20,19 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear()
+
+
+
+/* ---- Dark Mode --*/
+
+const toggle = document.getElementById('toggle');
+const body = document.body;
+
+toggle.addEventListener('input', e => {
+  const isChecked = e.target.checked;
+  if (isChecked) {
+    body.classList.add('dark-theme');
+  } else {
+    body.classList.remove('dark-theme');
+  }
+});
