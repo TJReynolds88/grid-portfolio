@@ -25,17 +25,9 @@ date.innerHTML = new Date().getFullYear()
 
 /* ---- Dark Mode --*/
 
-/*
+const checkbox = document.getElementById('checkbox');
 
-const toggle = document.getElementById('toggle');
-const root = document.root;
-
-toggle.addEventListener('input', e => {
-  const isChecked = e.target.checked;
-  if (isChecked) {
-    root.classList.add('dark-theme');
-  } else {
-    root.classList.remove('dark-theme');
-  }
+checkbox.addEventListener('change', () => {
+// change the theme of the website
+document.documentElement.classList.toggle('dark');
 });
-*/
